@@ -1,10 +1,13 @@
-# tpSDD2
-echo "# tpSDD1" >> README.md
+#   Pour creer un repository
+
+echo "# tpSDD2" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main 
-git remote add origin https://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@github.com/jolisobriquet/tpSDD1.git
+git remote add origin https://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@github.com/jolisobriquet/tpSDD2.git
 git push -u origin main
 
-git clone https://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@github.com/jolisobriquet/tpSDD1.git
+#   Pour cloner un repository existant
+
+git remote add origin https://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@github.com/jolisobriquet/tpSDD2.git
