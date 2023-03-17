@@ -17,7 +17,13 @@
  * @struct file_t
  * @brief definit la structure de donnees de la file
  */
-// TO DO
+typedef struct file_t{
+    int nbreElt;
+    int sommet;
+    eltType* base;
+    eltType* debut;
+    eltType* fin;
+    }file_t;
 
 /**
  * @brief Initialiser une file du type eltType
@@ -25,7 +31,8 @@
  * @param [in] taille taille de la file
  * @return l'adresse de la structure file_t
  */
-//  initFile();
+
+//file_t* initFile(int taille);
 
 /** TO DO
  * @brief Verifier si la file est vide (aucun element dans la file)

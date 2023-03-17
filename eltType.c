@@ -14,10 +14,8 @@
  * @param [in] xxx l'adresse du 2eme element du type 'eltType'
  * @return 1 si les 2 elements sont egaux; 0 s'ils sont differents
  */
+
 // compareElt()
-// {
-// 	// TO DO
-// }
 
 /** TO DO
  * @brief Copier la valeur d'un element a un autre emplacement
@@ -38,17 +36,24 @@
  * @param [in] xxx l'adresse du 2eme element
  * @return 1 si les 2 elements sont egaux; 0 s'ils sont differents
  */
-//  compareElt()
-// {
-// 	// TO DO
-// }
+
+int compareElt(eltType* elt1, eltType* elt2){
+    int result = 0;
+
+    if(elt1->lettre == elt2->lettre && elt1->num == elt2->num){
+        result = 1;
+    }
+
+    return result;
+}
 
 // /** TO DO
 //  * @brief Copier la valeur d'un element dans un autre emplacement
 //  * @param [in] xxx l'adresse de l'element a copier
 //  * @param [in] xxx l'adresse de la destination
 //  */
-// copyElt()
-// {
-// 	// TO DO
-// }
+
+void copyElt(eltType* eltACopier, eltType* eltDestination){
+    eltDestination->lettre = eltACopier->lettre;
+    eltDestination->num= eltACopier->num;
+}

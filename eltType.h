@@ -13,6 +13,8 @@
  * @brief redefinir 'int' en 'eltType' (pour les elements de type 'int')
  */
 
+// typedef int eltType;
+
 
 /** TO DO
  * @struct eltType
@@ -21,7 +23,13 @@
  *      - 'lettre' : un caractere
  *      - 'num' : un entier
  */
-// TO DO
+typedef struct eltType eltType;
+
+struct eltType{
+    char lettre;
+    int num;
+};
+
 
 /* ------------------------- Prototype des fonctions de gestion des elements  ------------------------- */
 /**
@@ -30,13 +38,13 @@
  * @param [in] xxx l'adresse du 2eme element du type 'eltType'
  * @return 1 si les 2 elements sont egaux; 0 s'ils sont differents
  */
-// compareElt();
+int compareElt(eltType* elt1, eltType* elt2);
 
 /**
  * @brief Copier la valeur d'un element dans un autre emplacement
  * @param [in] xxx l'adresse de l'element a copier
  * @param [in] xxx l'adresse de la destination
  */
-// copyElt();
+void copyElt(eltType* eltACopier, eltType* eltDestination);
 
 #endif

@@ -11,11 +11,13 @@
  * @param [in] taille taille de la file
  * @return l'adresse de la structure file_t
  */
-//  initFile()
-// {
-//     // TO DO
-// }
 
+/*
+file_t* initFile(int taille){
+
+}
+
+*/
 
 /**  TO DO
  * @brief Verifier si la file est vide (aucun element dans la file)
